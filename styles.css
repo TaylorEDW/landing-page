@@ -1,0 +1,311 @@
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+  }
+  
+  header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    color: white;
+    font-size: 36px;
+   font-family: "Contrail One", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+    
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 20px;
+    
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  #produtos {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    justify-content: flex-start;
+    
+  }
+  
+  .produto {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 30%;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 0 0 auto;
+    width: 300px;
+    margin-right: 20px;
+    display: inline-block;
+  }
+
+  .produto:hover {
+    transform: scale(1.05);
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .produto:hover .overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .overlay-content {
+    text-align: center;
+    color: white;
+  }
+  
+  .overlay-content h2 {
+    margin-top: 0;
+  }
+  
+  .overlay-content p {
+    margin-bottom: 20px;
+  }
+  
+  .overlay-content button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .overlay-content button:hover {
+    background-color: #45a049;
+  }
+
+
+  .produto img {
+    width: 250px;
+    height: 250px;
+    
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .contato img {
+    width: 40px;
+    margin: 0 10px;
+  }
+  
+  /* Adicionando estilos para a nova seção de Apresentação */
+  #apresentacao {
+    background-color: #333;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  #apresentacao h2 {
+    color: white;
+    font-size: 28px;
+  }
+  
+  #apresentacao p {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilizando o botão de Adicionar ao Carrinho */
+  .produto button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .produto button:hover {
+    background-color: #45a049;
+  }
+  
+  #finalizarcompra {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px; /* Espaço entre o botão e a lista de produtos */
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#finalizarcompra:hover {
+    background-color: #45a049;
+}
+
+#itens-carrinho .remover {
+  background-color: #ff3333; /* Cor vermelha */
+  color: white; /* Texto em branco */
+  border: none;
+  padding: 5px 10px; /* Reduz o preenchimento */
+  font-size: 14px; /* Reduz o tamanho da fonte */
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Adiciona transição */
+  margin-left: 5px; /* Adiciona margem à esquerda para separar dos produtos */
+  margin-bottom: 5px; /* Adiciona espaçamento vertical entre os botões */
+}
+
+#itens-carrinho .remover:hover {
+  background-color: #cc0000; /* Cor vermelha mais escura ao passar o mouse */
+  transform: scale(1.1); /* Aumenta ligeiramente o tamanho ao passar o mouse */
+}
+
+.logo-container {
+  text-align: center; /* Centraliza a logo e o texto */
+  margin-bottom: 20px; /* Espaço entre a logo e o título */
+}
+
+.logo {
+  width: 200px; /* Tamanho da logo */
+  height: 200px; /* Tamanho da logo */
+  border-radius: 50%; /* Torna a imagem circular */
+  overflow: hidden; /* Garante que a imagem circular seja exibida corretamente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+}
+
+
+.logo img {
+  max-width:100%; /* Preenche a largura do contêiner da logo */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+
+/* Estilos para dispositivos de tela menores */
+@media screen and (max-width: 768px) {
+    header {
+      padding: 10px;
+    }
+  
+    header h1 {
+      font-size: 24px;
+    }
+
+    .logo-container {
+      text-align: center; /* Centraliza a logo e o texto */
+      margin-bottom: 20px; /* Espaço entre a logo e o título */
+    }
+    
+    .logo {
+      width: 200px; /* Tamanho da logo */
+      height: 200px; /* Tamanho da logo */
+      border-radius: 50%; /* Torna a imagem circular */
+      overflow: hidden; /* Garante que a imagem circular seja exibida corretamente */
+      display: block;
+      margin: 0 auto;
+    
+    }
+    
+    
+    .logo img {
+      width: 100%; /* Preenche a largura do contêiner da logo */
+      height: auto; /* Mantém a proporção da imagem */
+    }
+
+    
+  
+    nav ul li {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    main {
+      padding: 10px;
+    }
+  
+    #apresentacao {
+      padding: 10px;
+    }
+  
+    #apresentacao h2 {
+      font-size: 20px;
+    }
+  
+    #produtos .produto {
+      width: calc(100% - 20px);
+    }
+
+    #produtos {
+      flex-wrap: wrap; /* Os produtos serão exibidos um embaixo do outro */
+      justify-content: center; /* Centraliza os produtos na tela */
+    }
+  
+    .contato img {
+      width: 30px;
+    }
+    /* Ajuste adicional para dispositivos muito estreitos */
+  @media screen and (max-width: 480px) {
+    .produto {
+      width: calc(100% - 20px); /* Define a largura dos produtos para ocupar toda a largura da tela */
+      margin-right: 0; /* Remove a margem direita para o último produto na linha */
+    }
+  }
+  }

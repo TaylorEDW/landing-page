@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Contrail+One&display=swap" rel="stylesheet">
+  <title>Noleto Suplementos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <img src ="Logo NS.jpeg" alt ="Logo da loja">
+      </div>
+
+    <h1></span>Noleto Suplementos</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Bem-estar</a></li>
+        <li><a href="#">Saúde</a></li>
+        <li><a href="#">Fitness</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+  <!-- Mantendo a seção de Produtos -->
+  <section id="produtos">
+    <!-- Produto 1 -->
+    <div class="produto" onclick="showOverlay(this)">
+      <img src="Growth ft1.jpg" alt="Suplementos Growth">
+      <h3>Linha de suplementos da Growth </h3>
+      <p>Nutrientes necessários para construir músculos, melhorar o desempenho e maximizar os resultados.</p>
+      <button onclick="adicionarAoCarrinho(1, 'Suplementos Growth')">Adicionar ao Carrinho</button>
+      <!-- Overlay -->
+      <div class="overlay" onclick="adicionarAoCarrinho(1, 'Suplementos Growth')">
+        <div class="overlay-content">
+          <h2>Suplementos Growth</h2>
+          <p>Experimente a linha de suplementos da Growth, líder em qualidade e desempenho no mercado fitness, desde proteínas de alta qualidade até aminoácidos essenciais.</p>
+          <button>Adicionar ao Carrinho</button>
+        </div>
+      </div>
+    </div>
+    <!-- Adicione mais produtos conforme necessário -->
+    <div class="produto" onclick="showOverlay(this)">
+      <img src="Growth Whey.jpeg" alt="Whey Protein">
+      <h3>Whey Proteins Growth </h3>
+      <p>Fonte pura e potente de proteína para apoiar objetivos de treinamento, disponíveis em uma variedade de deliciosos sabores.</p>
+      <button onclick="adicionarAoCarrinho(2, 'Whey Proteins Growth')">Adicionar ao Carrinho</button>
+      <!-- Overlay -->
+      <div class="overlay" onclick="adicionarAoCarrinho(2, 'Whey Proteins Growth')">
+        <div class="overlay-content">
+          <h2>Whey Proteins Growth</h2>
+          <p>Experimente os whey proteins da Growth, a escolha número um de atletas e entusiastas do fitness em todo o mundo.</p>
+          <button>Adicionar ao Carrinho</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="produto" onclick="showOverlay(this)">
+      <img src="Barrinha Growth.jpeg" alt="Barrinhas Growth">
+      <h3>Barrinhas Growth</h3>
+      <p>As barrinhas da linha Growth são uma opção conveniente e saborosa para quem busca um lanche saudável e nutritivo.</p>
+      <button onclick="adicionarAoCarrinho(3, 'Barrinhas Growth')">Adicionar ao Carrinho</button>
+      <!-- Overlay -->
+      <div class="overlay" onclick="adicionarAoCarrinho(3, 'Barrinhas Growth')">
+        <div class="overlay-content">
+          <h2>Barrinhas Growth</h2>
+          <p>As barrinhas fornecem a energia necessária para sustentar o seu dia e apoiar os seus objetivos fitness.</p>
+          <button>Adicionar ao Carrinho</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="produto" onclick="showOverlay(this)">
+      <img src="Barrinha Bold.jpeg" alt="Barrinhas Bold">
+      <h3>Barrinhas Bold</h3>
+      <p>Fonte de proteína para o dia a dia, um lanche pra salvar em todo momento!</p>
+      <button onclick="adicionarAoCarrinho(4, 'Barrinhas Bold')">Adicionar ao Carrinho</button>
+      <!-- Overlay -->
+      <div class="overlay" onclick="adicionarAoCarrinho(4, 'Barrinhas Bold')">
+        <div class="overlay-content">
+          <h2>Barrinhas Bold</h2>
+          <p>A linha tradicional de barrinhas proteicas, com ZERO adição de açúcar, sem glúten e 20g de proteína.As barrinhas da BOLD são ideais para matar a fome no lanche da tarde e também são perfeitas como pré-treino.</p>
+          <button>Adicionar ao Carrinho</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="produto" onclick="showOverlay(this)">
+      <img src="Alfajor Avela.jpeg" alt="Alfajor Dr.Peanut">
+      <h3>Alfajor Dr.Peanut</h3>
+      <p>Sabor e textura inconfundíveis, com ingredientes de altíssima qualidade.</p>
+      <button onclick="adicionarAoCarrinho(5, 'Alfajor Dr.Peanut')">Adicionar ao Carrinho</button>
+      <!-- Overlay -->
+      <div class="overlay" onclick="adicionarAoCarrinho(5, 'Alfajor Dr.Peanut')">
+        <div class="overlay-content">
+          <h2>Alfajor Dr.Peanut</h2>
+          <p>Composta por duas camadas de leves e crocantes bolachas, recheadas com a famosa pasta de amendoim Dr. Peanut e cobertas com chocolate zero açúcar. </p>
+          <button>Adicionar ao Carrinho</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="produto" onclick="showOverlay(this)">
+      <img src="Whey Concentrado.jpg" alt="Whey Concentrado Growth">
+      <h3>Whey Concentrado Growth</h3>
+      <p>Whey protein Growth fornece proteínas para quem deseja hipertrofia e definição muscular.</p>
+      <button onclick="adicionarAoCarrinho(6, 'Whey Concentrado Growth')">Adicionar ao Carrinho</button>
+      <!-- Overlay -->
+      <div class="overlay" onclick="adicionarAoCarrinho(6, 'Whey Concentrado Growth')">
+        <div class="overlay-content">
+          <h2>Whey Concentrado Growth</h2>
+          <p>O WPC atende desde atletas de ponta com alto rendimento até pessoas sedentárias em busca de saúde, produto feito exclusivamente com proteínas do soro do leite, possui altíssima concentração de aminoácidos essenciais o que confere excelente poder anabólico. </p>
+          <button>Adicionar ao Carrinho</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="produto" onclick="showOverlay(this)">
+      <img src="Creatina Monohidratada.jpeg" alt="Creatina Monohidratada Growth">
+      <h3>Creatina Monhohidratada Growth</h3>
+      <p>Mais auxílio para seu crescimento muscular.</p>
+      <button onclick="adicionarAoCarrinho(7, 'Creatina Monhohidratada Growth')">Adicionar ao Carrinho</button>
+      <!-- Overlay -->
+      <div class="overlay" onclick="adicionarAoCarrinho(7, 'Creatina Monhohidratada Growth')">
+        <div class="overlay-content">
+          <h2>Creatina Monhohidratada Growth</h2>
+          <p>A creatina monohidratada é um dos suplementos mais populares do mercado. Além disso, é o suplemento mais estudado pela ciência esportiva. Ela é usada por atletas de diversas modalidades, incluindo fisiculturistas profissionais. O foco da sua aplicação na dieta é o ganho de massa muscular, garantindo a energia que seu músculo precisa para crescer cada vez mais. </p>
+          <button>Adicionar ao Carrinho</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="produto" onclick="showOverlay(this)">
+      <img src="Creatina BS.jpeg" alt="Creatina Black Skull">
+      <h3>Creatina Black Skull</h3>
+      <p>Poderosa fonte de energia e resistência para atletas e entusiastas do fitness.</p>
+      <button onclick="adicionarAoCarrinho(8, 'Creatina Black Skull')">Adicionar ao Carrinho</button>
+      <!-- Overlay -->
+      <div class="overlay" onclick="adicionarAoCarrinho(8, 'Creatina Black Skull')">
+        <div class="overlay-content">
+          <h2>Creatina Black Skull</h2>
+          <p>A Creatina Black Skull é uma aliada essencial para quem busca maximizar o desempenho físico e alcançar novos patamares de excelência nos seus objetivos de condicionamento e hipertrofia.</p>
+          <button>Adicionar ao Carrinho</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="produto" onclick="showOverlay(this)">
+      <img src="PT Growth.jpeg" alt="Pré Treino Haze Hardcore Growth">
+      <h3>Pré Treino Haze Hardcore Growth</h3>
+      <p>Muito mais energia e disposição para os treinos.</p>
+      <button onclick="adicionarAoCarrinho(9, 'Pré Treino Haze Hardcore Growth')">Adicionar ao Carrinho</button>
+      <!-- Overlay -->
+      <div class="overlay" onclick="adicionarAoCarrinho(9, 'Pré Treino Haze Hardcore Growth')">
+        <div class="overlay-content">
+          <h2>Pré Treino Haze Hardcore Growth</h2>
+          <p>O pré treino Haze Hardcore Growth oferece maior desempenho físico em atividades de alta intensidade, ganho de massa muscular ou emagrecimento, e é fonte de betalanina, auxiliando na prevenção de fadiga muscular.</p>
+          <button>Adicionar ao Carrinho</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="produto" onclick="showOverlay(this)">
+      <img src="Creatina MH Roxa.jpeg" alt="Creatina Monohidratada Growth Creapure">
+      <h3>Creatina Monhohidratada Growth Creapure</h3>
+      <p>Mais auxílio para seu crescimento muscular.</p>
+      <button onclick="adicionarAoCarrinho(10, 'Creatina Monhohidratada Growth Creapure')">Adicionar ao Carrinho</button>
+      <!-- Overlay -->
+      <div class="overlay" onclick="adicionarAoCarrinho(10, 'Creatina Monhohidratada Growth')">
+        <div class="overlay-content">
+          <h2>Creatina Monhohidratada Growth Creapure</h2>
+          <p>A creatina monohidratada é um dos suplementos mais populares do mercado. Além disso, é o suplemento mais estudado pela ciência esportiva. Ela é usada por atletas de diversas modalidades, incluindo fisiculturistas profissionais. O foco da sua aplicação na dieta é o ganho de massa muscular, garantindo a energia que seu músculo precisa para crescer cada vez mais. </p>
+          <button>Adicionar ao Carrinho</button>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+    </section>
+    <!-- Adicionando a nova seção de Apresentação -->
+    <section id="apresentacao">
+      <h2>Bem-vindo</h2>
+      <p>Somos uma loja especializada em suplementos que cuida do seu bem-estar, oferecendo uma variedade de produtos para ajudar você a alcançar seus objetivos de saúde e fitness.</p>
+      <p>Estamos localizados em Teresina-PI. Visite-nos para obter os melhores produtos e conselhos sobre suplementação.</p>
+    </section>
+  </main>
+
+  <div id="carrinho" style="display: none;">
+    <h2>Carrinho</h2>
+    <ul id="itens-carrinho"></ul>
+    <button id="finalizarcompra" onclick="finalizarCompra()">Finalizar Compra</button>
+</div>
+
+  <footer>
+    <div class="contato">
+      <a href="https://api.whatsapp.com/send?phone=558695806452"><img src="whatsapp.png" alt="WhatsApp"></a>
+      <a href="https://www.instagram.com/noleto_suplementos?igsh=NzY3MWt6MTQyaGo3"><img src="instagram.png" alt="Instagram"></a>
+    </div>
+    <p>&copy; 2024 Noleto Suplementos. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
